@@ -44,7 +44,7 @@ while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Samfah Admin</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

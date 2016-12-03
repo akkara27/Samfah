@@ -16,7 +16,7 @@ if ($_SESSION['checkSign'] != 'itoffside') {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Admin Samfa</title>
+    <title>Samfah Admin</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
