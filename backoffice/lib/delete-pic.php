@@ -6,7 +6,8 @@ $name = $_GET['name'];
 
 $path = getcwd().DIRECTORY_SEPARATOR;
 $newpath = substr($path, 0,22); //path local
-//$newpath = substr($path, 0,28); //path host
+//$newpath = substr($path, 0,28); //path hostinger
+//$newpath = substr($path, 0,39); //path z-host
 
 switch ($type) {
   case 'Classic':

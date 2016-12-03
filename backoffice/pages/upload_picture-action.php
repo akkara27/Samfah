@@ -63,7 +63,7 @@ if($_POST["Action"] == "Save")
         $location = "images\pic_door_modern";
         break;
     }
-	
+
 	//--SET DIRECTORY IMAGE HOST
     /*switch ($type) {
       case 'Classic':
@@ -88,7 +88,7 @@ if($_POST["Action"] == "Save")
         $location = "images/pic_door_modern";
         break;
     }*/
-	
+
       //end upload image
       $date = date('Y-m-d H:i:s');
       $sql  = "INSERT INTO picture_door ";
@@ -105,7 +105,8 @@ if($_POST["Action"] == "Save")
         $path = getcwd().DIRECTORY_SEPARATOR;
         $newpath = substr($path, 0,22); //path local
         $target = $newpath."\\".$location."\\".$newname; //path local
-        //$newpath = substr($path, 0,28); //path host
+        //$newpath = substr($path, 0,28); //path hostinger
+        //$newpath = substr($path, 0,39); //path z-host
         //$target = $newpath.'/'.$location.'/'.$newname; //path host
         echo $target;
         move_uploaded_file($_FILES['fileToUpload']['tmp_name'] , $target);
