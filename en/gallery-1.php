@@ -8,6 +8,7 @@ $doorsQuery = $objCon->query("
     picture_door.Picture_Door_ID,
     picture_door.Picture_Door_Name,
     picture_door.Picture_Door_Type,
+    picture_door.Picture_Door_Caption,
     COUNT(picture_door_like.LIKE_ID) As likes
 
     FROM picture_door
@@ -142,7 +143,7 @@ $(document).ready(function(){
               <div class="header-gallery"><!-- header-gallery -->
               <?php if($door->Picture_Door_Type == "Showroom"){$path_door  = '../images/showroom/'.$door->Picture_Door_Name.'.jpg';
             }?>
-                <a href="<?=$path_door?>" data-lightbox="image-1" data-title="<?php echo $door->Picture_Door_Name; ?>"><img src="<?=$path_door?>" alt="door" ></a>
+                <a href="<?=$path_door?>" data-lightbox="image-1" data-title="<?php echo $door->Picture_Door_Caption; ?>"><img src="<?=$path_door?>" alt="door" ></a>
               </div><!-- /End header-gallery -->
               <div class="footer-gallery"><!-- /footer-gallery -->
                 <div class="post-caption"></div>
