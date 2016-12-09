@@ -17,7 +17,8 @@ if($_POST["Action"] == "Save")
   $num = count($array_last)-1;
   $lastname = strtolower($array_last[$num]);
   $codename = $_POST["codename"];
-  $caption = $_POST["caption"];
+  $caption_nobr = $_POST["caption"];
+  $caption = wordwrap($caption_nobr, 80, "<br />\n");
   $type = $_POST["optionsRadios"];
 
   if(!file_exists($_FILES['fileToUpload']['tmp_name']) || !is_uploaded_file($_FILES['fileToUpload']['tmp_name'])) {
